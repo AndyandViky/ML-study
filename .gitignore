@@ -8,6 +8,6 @@
 tensorflow/NTU_ML2017_Hung-yi-Lee_HW
 tensorflow/logs
 tensorflow/MNIST_data
-tensorflow/validate-picture/crack_capcha.*
+tensorflow/validate-picture/*
 
 graphLab/datasets
