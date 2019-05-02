@@ -29,8 +29,7 @@ x_twenty_test = tfidf_transformer.transform(count_vector.transform(twenty_test.d
 score = clf.predict(x_twenty_test)
 
 mean = np.mean(score == twenty_test.target)
-
-pass
+print(mean)
 
 # ================================== 使用 pipline 简单方便
 # from sklearn.pipeline import Pipeline

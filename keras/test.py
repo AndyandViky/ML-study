@@ -1,3 +1,5 @@
+# 识别图片中的数字
+
 import numpy as np
 import gzip
 import struct
