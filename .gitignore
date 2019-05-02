@@ -11,3 +11,4 @@ tensorflow/MNIST_data
 tensorflow/validate-picture/*
 
 graphLab/datasets
+graphLab/knn_model
