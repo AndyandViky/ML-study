@@ -12,3 +12,4 @@ tensorflow/validate-picture/*
 
 graphLab/datasets
 graphLab/knn_model
+graphLab/article.csv
