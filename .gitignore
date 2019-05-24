@@ -10,6 +10,6 @@ tensorflow/logs
 tensorflow/MNIST_data
 tensorflow/validate-picture/*
 
-graphLab/datasets
+datasets/
 graphLab/knn_model
 graphLab/article.csv
