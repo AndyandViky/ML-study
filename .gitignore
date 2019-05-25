@@ -15,3 +15,4 @@ graphLab/knn_model
 graphLab/article.csv
 
 pytorch/.ipynb_checkpoints
+pytorch/__pycache__

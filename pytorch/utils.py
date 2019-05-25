@@ -8,20 +8,24 @@
 @time: 2019/5/25 下午7:01
 @desc: 存放一些基础工具函数
 '''
+
+' a utils module '
+
 from skimage import transform
 import numpy as np
 import torch
 
 # ---------------图片相关-----------------
-class Rescala(object):
+# 以下函数在 torchvision.transforms 下有提供
+class Rescale(object):
     """
-    该类只能作用于含有landmarks的图片
     图片缩放，将图片缩放到指定大小
     output_size： 可接收 int， 和tuple两个类型
     int: 表示将较短的边赋值为output_size, 另一边等比缩放
     tuple：规定长度和宽度
     """
-    def __int__(self, output_size, has_landmarks=False):
+
+    def __init__(self, output_size, has_landmarks=False):
         assert isinstance(output_size, (int, tuple))
         self.output_size = output_size
         self.has_landmarks = has_landmarks
