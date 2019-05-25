@@ -13,3 +13,5 @@ tensorflow/validate-picture/*
 datasets/
 graphLab/knn_model
 graphLab/article.csv
+
+pytorch/.ipynb_checkpoints
