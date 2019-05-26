@@ -19,6 +19,3 @@ data = MdataSample("", "",
                        RandomCrop(224),
                        ToTensor()
                    ]))
-
-
-
