@@ -10,6 +10,9 @@
 例如，它可以裁剪感兴趣的区域，缩放并校正图像的方向。
 只需要在现有CNN上做微小的调整就能实现空间变换网络。
 https://zhuanlan.zhihu.com/p/37110107
+https://blog.csdn.net/qq_39422642/article/details/78870629
+https://blog.csdn.net/xbinworld/article/details/65660665
+https://blog.csdn.net/xiaqunfeng123/article/details/17362881
 """
 
 import torch
@@ -22,7 +25,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 plt.ion() # 开启交互模式
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 # loading data
 train_data = torch.utils.data.DataLoader(

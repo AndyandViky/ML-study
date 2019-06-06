@@ -72,7 +72,7 @@ test_loader = torch.utils.data.DataLoader(
     ])),
     batch_size=1, shuffle=True
 )
-device = torch.device("cuda" if (use_cuda and torch.cuda.is_available()) else "cpu")
+device = torch.device("cuda:0" if (use_cuda and torch.cuda.is_available()) else "cpu")
 
 model = Net().to(device)
 
