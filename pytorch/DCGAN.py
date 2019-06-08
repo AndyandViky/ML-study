@@ -125,8 +125,10 @@ class Generator(nn.Module):
             nn.Tanh()
             # state size. (nc) x 64 x 64
         )
+
     def forward(self, x):
         return self.main(x)
+
 
 # Create the generator
 netG = Generator(ngpu).to(device)
@@ -141,6 +143,7 @@ netG.apply(weights_init)
 
 # # Print the model
 # print(netG)
+
 
 class Discriminator(nn.Module):
     def __init__(self, ngpu):
@@ -169,6 +172,7 @@ class Discriminator(nn.Module):
 
     def forward(self, input):
         return self.main(input)
+
 
 # Create the Discriminator
 netD = Discriminator(ngpu).to(device)
