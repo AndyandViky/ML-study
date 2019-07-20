@@ -16,3 +16,5 @@ graphLab/article.csv
 
 pytorch/.ipynb_checkpoints
 pytorch/__pycache__
+
+paper/
